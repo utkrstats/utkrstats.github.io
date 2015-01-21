@@ -39,7 +39,7 @@ h1, h2, h3 {
   color: #333;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 h1 small {
   font-size: 80%;
@@ -63,7 +63,7 @@ p {
 
 .lead {
   color: #555;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .container > p {
