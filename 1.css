@@ -61,6 +61,11 @@ p {
   text-align: left;
 }
 
+.lead {
+  color: #555;
+  font-size: 2rem;
+}
+
 .container > p {
   margin: 1rem auto 1rem;
   max-width: 800px;
