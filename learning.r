@@ -13,6 +13,10 @@
 
 favorite_num <- 3.14159265358979323846264338327950288419716939937510582097
 
+second_favorite_num <- favorite_num * 2
 
 
+# you can also get a bunch of numbers really easily
+
+nums <- c(1:100)
 
