@@ -1,3 +1,5 @@
+/*!* table-grid (http://mdo.github.io/table-grid)
+ * Released under MIT, (c) 2014 Mark Otto */
 /** Styles for the Table Grid docs.*/
 
 html {
@@ -56,11 +58,6 @@ p {
   text-align: left;
 }
 
-.muted {
-  color: #BBB;
-  text-align: left;
-}
-
 .lead {
   color: #555;
   font-size: 2rem;
@@ -69,12 +66,6 @@ p {
 .container > p {
   margin: 1rem auto 1rem;
   max-width: 800px;
-  
-}
-
-.subtitle {
-  color: #BBB;
-  text-align: center;
 }
 
 hr {
@@ -137,11 +128,7 @@ code {
   line-height: 1.5;
 }
 
-/*!* table-grid (http://mdo.github.io/table-grid)
- * Released under MIT, (c) 2014 Mark Otto */
-
 /** Container*/
-
 /* Holds and centers the site content */
 .container {
   max-width: 940px;
@@ -150,7 +137,6 @@ code {
 }
 
 /** The Grid*/
-
 @media (min-width: 600px) {
   /* Add `.grid` for the table */
   .grid {
@@ -190,7 +176,6 @@ code {
 
 /** Vertically center grid content*
  * Requires content within the column to be inline or inline-block.*/
-
 .grid-align-middle .col {
   vertical-align: middle;
 }
