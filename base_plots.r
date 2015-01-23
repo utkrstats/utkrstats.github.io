@@ -22,4 +22,4 @@ plot(y~x)              #yes, the tilde is important
   plot(y~x, main="Y versus X, yo")
   
 
-
+# mosaic plot: you can use the plot function for two factors
