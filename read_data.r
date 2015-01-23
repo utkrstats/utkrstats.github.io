@@ -8,4 +8,8 @@ my_data <- read.csv("YOUR FILE HERE")
 # just for fun...
 class(my_data)
 
+# first few checks to see if your data makes sense
+names(my_data)
+head(my_data)
+
 
