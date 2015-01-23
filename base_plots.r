@@ -5,3 +5,21 @@
 #generate some random data to plot
 x <- rnorm(100)
 y <- rlnorm(100)
+
+# my favorite plot: the histogram
+hist(x)
+
+  # to get the percentages
+  hist(x, freq=FALSE)
+
+# sometimes boxplots are very insightful... those outliers!
+boxplot(y)
+
+# another doozy, the scatterplot
+plot(y~x)              #yes, the tilde is important
+
+  # add a basic title
+  plot(y~x, main="Y versus X, yo")
+  
+
+
