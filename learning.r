@@ -19,6 +19,7 @@ pi
 
 # you can also get a bunch of numbers really easily
 nums <- c(1:100)
+nums
 
 # R is like a lego castle. It looks very complicated but is actually made of small blocks
 # the class() function tells you what these blocks are called
