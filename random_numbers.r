@@ -7,3 +7,10 @@ hist(x)
 
 ### what if you wanted 1000 numbers? what about 10,000?
 
+
+# the poisson distribution is very common for ...
+# the following gives you 100 random numbers from the poisson distribution (lambda = 3)
+my_pois <- rpois(100,3)
+hist(my_pois)
+
+
