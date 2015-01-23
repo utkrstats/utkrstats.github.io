@@ -26,3 +26,10 @@ plot(y~x)              #yes, the tilde is important
 factor1 <- as.factor(c("yes","yes","maybe","yes","yes","yes","no","no","yes","no"))
 factor2 <- as.factor(c("red","red","blue","red","blue","red","blue","blue","blue","red"))
 plot(factor1~factor2)
+
+
+# in Excel, you often want to get a basic trendline
+# this is three lines of base R
+plot(y~x)
+my_line <- lm(y~x)
+abline(my_line)
