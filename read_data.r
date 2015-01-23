@@ -13,3 +13,8 @@ names(my_data)
 head(my_data)
 
 
+
+# you can also download files from the internet
+download.file("URL", "where_you_want_it_to_go")
+
+
