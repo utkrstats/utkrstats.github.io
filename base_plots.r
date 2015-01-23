@@ -23,3 +23,6 @@ plot(y~x)              #yes, the tilde is important
   
 
 # mosaic plot: you can use the plot function for two factors
+factor1 <- as.factor(c("yes","yes","maybe","yes","yes","yes","no","no","yes","no"))
+factor2 <- as.factor(c("red","red","blue","red","blue","red","blue","blue","blue","red"))
+plot(factor1~factor2)
