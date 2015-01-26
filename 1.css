@@ -66,6 +66,7 @@ p {
 .lead {
   color: #555;
   font-size: 2rem;
+  text-align: center;
 }
 
 .container > p {
