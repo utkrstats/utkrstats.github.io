@@ -30,10 +30,11 @@ Use sequences to compute the following
 \item $x^2$
 \item $sin(x)$
 \item $sin(1/x)$\\\\
-\hspace{10mm}\textbf{BONUS:} Reproduce the following graphic. Hint: Use help(curve) to research from, to, and main arguments
-\begin{center}
-\includegraphics[width = 150mm]{Rplot.png}
-\end{center}
+\hspace{10mm}\textbf{BONUS:} Reproduce the following graphic. Hint: Use help(curve) to research from, to, and main arguments\\
+<<q4, fig.height = 3,echo=FALSE>>=
+curve(sin(1/x), from =-3.5, to = 3.5, main= "sin(1/x)")
+@
+
 \end{enumerate}
 
 \end{enumerate}
