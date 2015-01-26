@@ -21,6 +21,10 @@ pi
 nums <- c(1:100)
 nums
 
+# you can also perform operations on numbers and vectors
+log(2)
+log(1:100)
+
 # R is like a lego castle. It looks very complicated but is actually made of small blocks
 # the class() function tells you what these blocks are called
 
