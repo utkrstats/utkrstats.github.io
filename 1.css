@@ -58,6 +58,11 @@ p {
   text-align: left;
 }
 
+.subtitle {
+  color: #BBB;
+  text-align: center;
+}
+
 .lead {
   color: #555;
   font-size: 2rem;
