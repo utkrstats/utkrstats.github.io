@@ -5,7 +5,7 @@
 \usepackage[margin=.85in]{geometry}
 
 \begin{document}
-\noindent \textbf{R: Crash Course (spring 2015) -- Assignment One \hfill Troyer \& Wilkerson}
+\noindent \textbf{R: Crash Course (Spring 2015) -- Assignment One \hfill Troyer \& Wilkerson}
 
 \begin{enumerate}
   \item
@@ -32,8 +32,8 @@
   \item Plot the following graphs using the curve function
   \begin{enumerate}
     \item $x^2$
-    \item $sin(x)$
-    \item $sin(1/x)$\\\\
+    \item $\sin(x)$
+    \item $\sin(\frac{1}{x})$\\\\
   \hspace{10mm}\textbf{BONUS:} Reproduce the following graphic. Hint: Use \texttt{help(curve)} to research \texttt{from}, \texttt{to}, and \texttt{main} arguments\\
 
 <<bonus, fig.height = 3,echo=FALSE>>=
