@@ -9,7 +9,7 @@
 
 \begin{enumerate}
   \item
-  Create variables x and y and set them equal to 3 and 4 respectivly. Use the variables to compute the following
+  Create variables \texttt{x} and \texttt{y} and set them equal to 3 and 4 respectivly. Use the variables to compute the following
   \begin{enumerate}
     \item $x+3x^2$
     \item $\frac{y(3+x)}{2^(x-y)}$
@@ -34,7 +34,7 @@
     \item $x^2$
     \item $sin(x)$
     \item $sin(1/x)$\\\\
-  \hspace{10mm}\textbf{BONUS:} Reproduce the following graphic. Hint: Use help(curve) to research from, to, and main arguments\\
+  \hspace{10mm}\textbf{BONUS:} Reproduce the following graphic. Hint: Use \texttt{help(curve)} to research \texttt{from}, \texttt{to}, and \texttt{main} arguments\\
 
 <<bonus, fig.height = 3,echo=FALSE>>=
 curve(sin(1/x), from =-3.5, to = 3.5, main= "sin(1/x)")
@@ -50,13 +50,13 @@ curve(sin(1/x), from =-3.5, to = 3.5, main= "sin(1/x)")
     \item Create a vector "TempDay346" that includes only temperatures taken on day 346. Create another vector called "TempDay347" which includes only temp from day 347. 
     \item What is the length of these vectors?
     \item What are the mean, standard deviation, maximum and minimum values for both of these vectors?
-    \item Copy the following code into your R script. Comment on what it does and how it does it. e.i. what does pch do? what does col do? ect.
+    \item Copy the following code into your R script. Comment on what it does and how it does it. e.i. what does \texttt{pch} do? what does \texttt{col} do? etc.
 
 <<2, eval=FALSE>>=
 plot(temp~time, data = beaver1[which(beaver1$day == 346),], pch=9, col = "red")
 @
 
-\item[\textbf{BONUS:}] Reproduce the following plot as best you can\\
+\item[\textbf{BONUS:}] Reproduce the following plot as best as you can\\
 <<asd, fig.height = 5, fig.width=5,echo=FALSE>>=
 boxplot(temp~activ, data = beaver1, col = c("blue", "red"), names = c("inactive", "active"))
 @
