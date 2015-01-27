@@ -21,7 +21,8 @@ Use sequences to compute the following
 \item $\sum_{i=1}^{150}i^{100}/i!$ \hspace{13mm} i.e. \hspace{5mm} $1^{100}/1! +2^{100}/2!+3^{100}/3!+...+150^{100}/150!$\\
 \begin{enumerate}
 \item[\textbf{BONUS:}] $\sum^{\infty}_{k=0}\frac{2}{k(k+1)}$
-\item[\textbf{BONUS:}] $\sum^{\infty}_{k=0}4\left(1+\frac{-1^k}{(2k+1)}\right)$
+\item[\textbf{BONUS:}] $\sum^{\infty}_{k=0}4\left(1+\frac{-1^k}{(2k+1)}\right)$\\
+hint: just use a really big number instead of infinity
 \end{enumerate}
 \end{enumerate}
 \item Plot the following graphs using the curve function
