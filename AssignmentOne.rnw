@@ -1,17 +1,14 @@
 \documentclass{article}
-
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage[margin=.85in]{geometry}
-
 \begin{document}
 \noindent \textbf{R: Crash Course (spring 2015) -- Assignment One \hfill Troyer \& Wilkerson}
-
 \begin{enumerate}
 \item
-Create a variables  x and y  and set it equal to 3 and 4 respectivly. Use the variables to compute the following
-\begin{enumerate} 
+Create a variables x and y and set it equal to 3 and 4 respectivly. Use the variables to compute the following
+\begin{enumerate}
 \item $x+3x^2$
 \item $\frac{y(3+x)}{2^(x-y)}$
 \item $x+y! - e^{3x}$
@@ -21,9 +18,11 @@ Use sequences to compute the following
 \begin{enumerate}
 \item $\sum_{i=0}^{50} 5i $ \hspace{20mm} i.e.\hspace{5mm} 5*(0)+5*(1)+5*(2)+5*(3)+...+5(50)
 \item $\sum_{i=1}^{100}1/i$ \hspace{18.3mm} i.e. \hspace{5mm} 1/1+1/2+1/3+...+1/100
-\item $\sum_{i=1}^{150}i^100/i!$ \hspace{13mm} i.e. \hspace{5mm} $1^{100}/1! +2^{100}/2!+3^{100}/3!+...+150^{100}/150!$\\\\
-\hspace{10mm}\textbf{BONUS:} $\sum^{\infty}_{k=0}\frac{2}{k(k+1)}$\\
-                       $\sum^{\infty}_{k=0}4\frac{-1^k}{2(k+1)}$
+\item $\sum_{i=1}^{150}i^100/i!$ \hspace{13mm} i.e. \hspace{5mm} $1^{100}/1! +2^{100}/2!+3^{100}/3!+...+150^{100}/150!$\\
+\begin{enumerate}
+\item[\textbf{BONUS:}] $\sum^{\infty}_{k=0}\frac{2}{k(k+1)}$
+\item[\textbf{BONUS:}] $\sum^{\infty}_{k=0}4\frac{-1^k}{2(k+1)}$
+\end{enumerate}
 \end{enumerate}
 \item Plot the following graphs using the curve function
 \begin{enumerate}
@@ -31,11 +30,31 @@ Use sequences to compute the following
 \item $sin(x)$
 \item $sin(1/x)$\\\\
 \hspace{10mm}\textbf{BONUS:} Reproduce the following graphic. Hint: Use help(curve) to research from, to, and main arguments\\
-<<q4, fig.height = 3,echo=FALSE>>=
+<<bonus, fig.height = 3,echo=FALSE>>=
 curve(sin(1/x), from =-3.5, to = 3.5, main= "sin(1/x)")
 @
 
 \end{enumerate}
+\clearpage
+
+\item R comes with a package preinstalled named "datasets." In this package are many interesting datasets that are worth exploring. For this question, we will be using the dataframe named "beaver1" that includes information of a beavers body temerature through a couple days. To call this dataframe, simply type "beaver1"
+\begin{enumerate}
+\item Create a vector "TempDay346" that includes only temperatures taken on day 346. Create another vector called "TempDay347" which includes only temp from day 347. 
+\item What is the length of these vectors?
+\item What are the mean, standard deviation, maximum and minimum values for both of these vectors?
+\item Copy the following code into your R script. Comment on what it does and how it does it. e.i. what does pch do? what does col do? ect.
+
+<<2, eval=FALSE>>=
+plot(temp~time, data = beaver1[which(beaver1$day == 346),], pch=9, col = "red")
+@
+
+\item[\textbf{BONUS:}] Reproduce the following plot as best you can\\
+<<asd, fig.height = 5, fig.width=5,echo=FALSE>>=
+boxplot(temp~activ, data = beaver1, col = c("blue", "red"), names = c("inactive", "active"))
+@
+\item[\textbf{BONUS:}] Add a legend to this plot with corresponding colors
+\end{enumerate}
 
 \end{enumerate}
 \end{document}
+
