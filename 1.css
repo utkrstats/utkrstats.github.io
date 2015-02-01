@@ -92,6 +92,10 @@ code {
   white-space: nowrap;
 }
 
+.li {
+  text-align: left;
+}
+
 /* Display utility classes */
 .inline-block {
   display: inline-block;
