@@ -94,6 +94,7 @@ code {
 
 li {
   text-align: left;
+  padding-left: 2em;
 }
 
 /* Display utility classes */
