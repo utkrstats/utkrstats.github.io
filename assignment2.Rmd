@@ -43,12 +43,13 @@ grades <- c(98,49,67,23,59,78,82)
 
 ```
 
-+  Modify your loop to be a function called "Grader"
++  Modify your loop to be a function called "Grader" that takes a vector of numeric grades as its argument
 
 3.
 
-+  Create a vector x containing a sequence 1 to 100 by 0.5
++  Create a vector x containing a sequence 1 to 100 by 1
 +  Create a vector y equal to 2*x
++  Create a plot of y as a function of x
 +  Use the rnorm() function to add "noise" to y. Set standard deviation to 15
 +  Creat a plot of y as a function of x
 
@@ -95,10 +96,10 @@ z <- c(5,4,2,8,7,6,5)
 
 5.
 
-+ Create a for loop that runs 100 times and grows a vector where the elements of this vector are means of 100 rand uniform numbers. e.i., use mean(runif(100)).
++ Create a for loop that runs 100 times and grows a vector where the elements of this vector are means of 100 random uniform numbers. e.i., use mean(runif(100)).
 + Your vector will essentially be this, but use a for loop to generate it;<br><br>
 c(mean(runif(100)), mean(runif(100)), mean(runif(100)), ......, mean(runif(100)))<br><br>
 + Use the hist() function to create a histogram of the vector you grew
-+ Rerun this code running the loop 1000 times. Creat another histogram and comment on the difference between the two plots.<br> 
-+ Create a function that reruns this code including the plot. The argument of this funtion should be how many times you would like the loops to run.
++ Rerun this code but run the loop 1000 times. Creat another histogram and comment on the difference between the two plots.<br> 
++ Create a function that reruns this code including the plot. The argument of this funtion should be how many times you would like the loops to run.<br>
 *BONUS*- Give the name of this fenomenon
