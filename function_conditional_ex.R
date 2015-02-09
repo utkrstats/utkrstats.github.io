@@ -2,7 +2,7 @@
 z <- c('a','b','c','d')
 y <- c()
 
-#nested condistional staments that convet letters to numbers
+#nested conditional statements that convert letters to numbers
 for(x in z){
   if(x == 'a'){
     y  <- c(y, 1)
