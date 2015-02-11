@@ -1,0 +1,39 @@
+---
+  title: Data Frame info
+  output:
+    html_document
+---
+
+### Define data
+```{r}
+baseball <- data.frame(wins=c(15,14,11,10,4,9,0,6),homeruns=c(7,3,5,3,1,4,2,3))
+```
+
+### what are the column names?
+```{r}
+names(baseball)
+```
+
+### what are the first 5 rows?
+```{r}
+head(baseball,5)
+```
+### How many rows are there?
+```{r}
+nrow(baseball)
+```
+
+### How many columns are there?
+```{r}
+ncol(baseball)
+```
+
+### Better, what are the dimensions?
+```{r}
+dim(baseball)
+```
+
+### More details, what is the structure?
+```{r}
+str(baseball)
+```
