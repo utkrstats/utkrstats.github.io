@@ -1,0 +1,54 @@
+---
+  title: "Basic Plotting"
+  output:
+    html_document
+---
+
+R has a really powerful base plotting system.
+We're going to go over the most basic of these options
+
+### generate some random data to plot
+```{r}
+x <- rnorm(100)
+y <- rlnorm(100)
+```
+
+### histogram
+```{r, fig.width=4, fig.height=4}
+hist(x)
+```
+
+##### to get the percentages
+```{r, fig.width = 4, fig.height = 4}
+hist(x, freq=FALSE)
+```
+
+### sometimes boxplots are very insightful... those outliers!
+```{r}
+boxplot(y)
+```
+
+### another doozy, the scatterplot
+```{r}
+plot(y~x)              #yes, the tilde is important
+```
+
+### add a basic title
+```{r}
+plot(y~x, main="Y versus X, yo")
+```
+
+### mosaic plot: you can use the plot function for two factors
+```{r}
+factor1 <- as.factor(c("yes","yes","maybe","yes","yes","yes","no","no","yes","no"))
+factor2 <- as.factor(c("red","red","blue","red","blue","red","blue","blue","blue","red"))
+plot(factor1~factor2)
+```
+
+
+### Basic Trendline (like Excel)
+```{r}
+plot(y~x)
+my_line <- lm(y~x)
+abline(my_line)
+```
