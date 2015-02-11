@@ -1,0 +1,30 @@
+---
+title: "Basic Regression"
+output:
+  html_document
+---
+
+### Generate some data
+```{r}
+x <- 1:100
+y <- x + 10*rnorm(100)
+plot(y~x)
+```
+
+### Create Linear model
+```{r}
+mod <- lm(y~x)
+plot(y~x)
+abline(mod)
+```
+
+### Regression output
+```{r}
+summary(mod)
+```
+
+### Grabbing the coefficients
+```{r}
+mod$coef[1]
+mod$coef[2]
+```
