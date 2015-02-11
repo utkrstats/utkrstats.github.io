@@ -1,0 +1,31 @@
+---
+title: "Compare Two Means"
+output:
+  html_document
+---
+
+### Are they statistically the same?
+
+
+```{r}
+x <- rnorm(100)
+y <- rnorm(100,1)
+
+boxplot(x,y)
+
+t.test(x,y)
+
+# R will say no (most of the time)
+```
+
+
+### Compare mean with a number (Is the true mean 0?)
+```{r}
+t.test(x,mu=0)
+
+# R will say yes (most of the time)
+```
+
+
+
+
