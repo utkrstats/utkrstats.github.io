@@ -1,0 +1,37 @@
+---
+  title: Useful functions for Vectors
+  output:
+    html_document
+---
+
+### sum of a vector
+```{r}
+my_grades <- c(100,80,85,70,90)
+sum(my_grades)
+```
+
+### length of a vector
+```{r}
+length(my_grades)
+```
+
+### average of a vector
+```{r}
+mean(my_grades)
+```
+
+### standard deviation of a vector
+```{r}
+sd(my_grades)
+```
+
+### smallest and biggest element
+```{r}
+min(my_grades)
+max(my_grades)
+```
+
+### A lot of information
+```{r}
+summary(my_grades)
+```
