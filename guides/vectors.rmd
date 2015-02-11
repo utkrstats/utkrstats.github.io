@@ -1,0 +1,26 @@
+---
+  title: "Vectors"
+  output: 
+    html_document
+---
+
+### Vectors are a type of lego block in R.
+
+```{r}
+my_vector <- c(1,1,2,3,5,8) # using the concatenate "c()" operator
+
+cartoons <- c("Spongebob", "Bugs Bunny", "Peter Griffin")
+```
+
+### The colon ":" is useful for generating sequential numbers
+```{r}
+one_thru_ten <- 1:10
+one_thru_ten
+```
+
+### You can select particular elements with the "[]" notation
+```{r}
+cartoons[2] #second element of cartoons
+
+my_vector[4] #fourth element of my_vector
+```
