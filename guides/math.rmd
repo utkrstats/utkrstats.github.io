@@ -1,0 +1,39 @@
+---
+  title: "Math in R"
+  output:
+    html_document
+---
+  
+### R is a calculator
+
+```{r}
+2 + 2
+100 / 7
+22/17 + 37/47 + 88/83
+```
+
+### You can store values
+```{r}
+a <- 2 # read this like "a is assigned 2"
+a + 2
+```
+
+### Parentheses are important for harder math
+```{r}
+1 + 1^2
+(1+1)^2
+```
+
+### Always use parentheses if you're not sure
+```{r}
+(10 + 1) / (7 + (8^2))
+```
+
+### R supplies some nice math functions
+```{r}
+sqrt(9.8696)
+sin(1)
+cos(12)
+log(10) # default base is e
+exp(1)
+```
