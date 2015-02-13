@@ -1,0 +1,35 @@
+---
+  title: "Regression Diagnostics"
+  output:
+    html_document
+---
+  
+### Generate Data
+```{r}
+x <- rnorm(100)
+y <- rexp(100,5)
+plot(y~x)
+```
+
+### Create Model
+```{r}
+m <- lm(y~x)
+summary(m)
+```
+
+### Confidence intervals for coefficients
+```{r}
+confint(m)
+```
+
+### ANOVA
+```{r}
+anova(m)
+```
+
+
+
+### Run the plot sequence
+```{r}
+plot(m)
+```
