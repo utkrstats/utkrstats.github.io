@@ -1,0 +1,43 @@
+---
+  title: "User Defined Functions"
+  output:
+    html_document
+---
+  
+### Part of what makes R so powerful is that you can write your own functions to make your life easier.
+
+```{r}
+
+my_func <- function(parameter) { 
+  rep(parameter,5)
+  }
+
+my_func("cats")
+
+```
+
+
+### a better example
+
+```{r}
+
+cook_dinner <- function(ingredients) {
+  for (i in ingredients) {
+    if (i == "pasta") {
+      print("for pasta we need to find the strainer")
+    }
+    else if (i == "salmon") { 
+      print("for salmon we need to get a lemon")
+      }
+    else if (i == "baked potatoes") {
+      print("Baked potato? we need butter")
+    }
+    else {
+      cat("I ain't got ", i, ". Ordering a pizza instead.")
+    } 
+  }
+}
+
+cook_dinner(c("pasta","salmon","cheese"))
+
+```
