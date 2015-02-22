@@ -1,0 +1,47 @@
+---
+title: "If statements"
+output:
+  html_document
+---
+
+### For helping you answer your pressing questions
+```{r}
+beer_price <- "Free"
+
+if (beer_price == "Free") {
+  print("I'm happy")
+}
+```
+
+#### awesome
+
+### If and else
+```{r}
+free_beer <- FALSE
+
+if (free_beer == TRUE) {
+  print("I'm happy")
+} else {
+  print("I'm upset")
+}
+
+```
+
+#### maybe tomorrow
+
+
+### Multiple conditions
+
+```{r}
+beer_price <- 3.50
+
+if (beer_price < 1) {
+  print("great deal")
+} else if (beer_price > 1 & beer_price < 3) {
+  print("not bad")
+} else if (beer_price > 3 & beer_price < 5) {
+  print("meh")
+} else {
+  print("too much")
+}
+```
