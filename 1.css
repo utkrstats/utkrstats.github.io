@@ -61,6 +61,7 @@ p {
 .subtitle {
   color: #BBB;
   text-align: center;
+  line-height: 1.2;
 }
 
 .lead {
