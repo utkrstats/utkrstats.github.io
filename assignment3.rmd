@@ -90,6 +90,6 @@ Download the ```nba.csv``` file from the website and load it into R.</br></br>
 
 ### Bonus that you should really try to attempt. 
 </br>
-Use both the flights and planes data table to answer this. Create a table of with columns, mean distance flown and number of seats. This table will be grouped by seat. </br>
+Use both the ```flights``` and ```planes``` data table to answer this. Create a table with two columns: mean distance flown and number of seats. This table will be grouped by seat. </br>
 
 #### Hint: you will have to use a join command to join the two tables. </br></br>
