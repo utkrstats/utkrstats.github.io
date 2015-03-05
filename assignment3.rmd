@@ -1,55 +1,95 @@
 ---
-title: "Assignment 3"
-author: "Curtis"
-date: "Wednesday, March 04, 2015"
-output: html_document
+  title: "Assignment 3"
+  date: "Due 3/10/2015"
+  output: html_document
 ---
-</br></br>
-Review questions:</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Imagine someone is fliping a coin 100 times. Every time the coin lands heads, you gain a dollar, and every time the coin lands tails, you loose a dollar. You start off with $50 You want to keep track of your money so you decide to creat a plot showing your current amount of money.</br>
-This question can be complete using the following commands, but complete it however you see fit: runif() or sample(), ifelse(), cumsum(), plot()
-</br>
-You plot should look something like like this (although the line will be different every time)
+  </br>
+
+## Question 1
+  
+Imagine someone flips a coin 100 times.</br>
+
+You gain a dollar every time the coin comes up heads, and you lose a dollar every time it comes up tails. </br>
+
+You start off with $50, and you want to keep track of your money over time. </br>
+
+So you decide to create a plot showing how much money you have over time.
+
+Can you use R to simulate this situation? (the plot and all)
+
+### Hint: 
+
+  This question can be done succinctly using the following commands, but complete it however you see fit: </br>
+  
+  ```runif()``` or ```sample()```, </br>
+  ```ifelse()```, </br> 
+  ```cumsum()```, </br>
+  ```plot()``` </br>
+  
+  Your plot should look something like like this (although the data will be different every time)
+  
 ```{r, echo= FALSE}
- plot(cumsum(ifelse(runif(100)>=.5,1,-1))+50, type = 'l', ylab = "my money", xlab = "number of coins fliped")
+plot(cumsum(ifelse(runif(100)>=.5,1,-1))+50, type = 'l', ylab = "my money", xlab = "number of coins flipped")
 ```
+
+### Bonus:
+
+Make this graph twice, once using ```plot()``` and once using ggplot.
 </br></br>
-Research the following dplyr "verbs" and give breif explanations for each.
+
+## Question 2
+  Research the following dplyr "verbs" and give brief explanations for each.
 </br></br>
-select:</br>
-group_by:</br>
-summarize:</br>
-mutate:</br>
-arrange:</br>
-fillter:</br>
-</br></br>
-bonus: inner\_join and outer\_join:</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  First describe what "join" does and then describe the difference between inner joins\& outer
+
+ + ```select```</br>
+ + ```group_by```</br>
+ + ```summarize```</br>
+ + ```mutate```</br>
+ + ```arrange```</br>
+ + ```filter```</br>
+  </br></br>
+  
+### Bonus: 
+```inner_join``` and ```outer_join```</br></br>
+
+First describe what "join" does and then describe the difference between inner joins \& outer joins.
 </br></br></br>
-Question 1.)
-</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Using the McDonalds nutrition content dataset, use dplyr to show the average calories (CAL) by food category (CATEGORY).
-</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Add columns for the minimum and maximm calories by category to this table.
+
+## Question 3
+Download the ```mcd.tsv``` file from the website and put it into the directory you've been using throughout this seminar.</br>
+Run the following command to load the data into R.
+```{r}
+mcd <- read.delim("mcd.tsv",header=TRUE,sep = "\t")
+```
+   a) Using this file (it's a dataset that shows McDonald's nutrition content), use dplyr to show the average calories (CAL) by food category (CATEGORY).
+</br></br>
+   b) Add columns for the minimum and maximum calories by category to this table. </br></br>
+   c) Run the following lines of code. Describe what each of them show.
+      i) ```qplot(CAL,data=mcd)```
+      ii) ```qplot(CAL,SGR,data=mcd)```
+      iii) ```qplot(CAL,SGR,color=CATEGORY,data=mcd)``` </br></br>
+   d) Make your own interesting plot using the McDonald's dataset and ggplot.
+</br></br>
+  
+##  Question 4 
+Download the ```nba.csv``` file from the website and load it into R.</br></br>
+  a) Using the NBA dataset provided, use dplyr to find the player with the highest total fouls.
+</br></br>
+  b) Find the average amount of points scored each season by player.
+</br></br>
+  c) Create a table that shows the top scoring player for each season.
+</br></br>
+  d) What player(s) was the top scorer for the most seasons? 
 </br></br></br></br>
 
-Question 2.) </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Using the NBA dataset provided, use dplyr to find the player with the highest total fouls
+## Question 5 </br>
+ a) Using the nycflights13 data package, use the table ```flights``` to find the average distance flown by carrier
+</br></br>
+ b) What data had the highest mean departure delay (dep_delay)?
 </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Find the average amount of points scored each season by player.
-</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Create a table that shows the top scoring player for each season.
-</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i) What player(s) was the top scorer for the most seasons? 
-</br></br></br></br>
-Question 3.) </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Using the nycflights13 data package, use the table flights to find the average distance flown by carrier
-</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) What data had the highest mean departure delay (dep_delay)?
-</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) bonus that you should really try to attempt. 
-</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i) Use both the flights and planes data table to answer this. Create a table of with columns, mean distance flown and number of seats. This &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; table will be grouped by seat. Hint: you will have to use a join command to join the two tables.
 
+### Bonus that you should really try to attempt. 
+</br>
+Use both the flights and planes data table to answer this. Create a table of with columns, mean distance flown and number of seats. This table will be grouped by seat. </br>
 
-
+#### Hint: you will have to use a join command to join the two tables. </br></br>
